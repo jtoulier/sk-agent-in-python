@@ -1,1 +1,2 @@
-# Semantic Kernel AI Agent in Python 
+# Semantic Kernel AI Agent in Python
+
