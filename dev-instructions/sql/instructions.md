@@ -198,9 +198,26 @@ Genera por cada cliente la siguiente cantidad de créditos:
     * en caso de MIC (entre 10 y 30)
 * written_at : es la fecha en que pidió el crédito, desde dos años atrás hasta un mes atrás. ten en cuenta el orden de las fechas y los montos para que parezca que el cliente va pidiendo créditos en forma ordenada y va aumentando el monto usado en esta tabla
 * due_date : entre hoy y dos años atrás, solo considera de lunes a viernes y no tomes en cuenta los feriados peruanos
-
 * client_type_id : el client_type_id de la tabla cliente 
 * risk_category_id : el risk_category_id de la tabla cliente
 * credit_line_authorized_amount : el credit_line_authorized_amount de la tabla cliente 
 * credit_line_used_amount : es el monto usado de la línea, es decir según los créditos aprobados del cliente, empieza de cero y termina igual al credit_line_used_amount de la tabla cliente 
  
+# Archivos esperados
+## drop-objects.sql
+Con las sentencias para eliminar todos los objetos previos a la ejecución de este script. Validando previamente si existen o no
+
+## create-objects.sql
+Con las sentencias para la creación ordenada y lógica de schemas, tablas, triggers
+
+## insert-params.sql
+Con las sentencias para poblar las tablas del esquema bank_params
+
+## drop-test-data.sql
+Con las sentencias para eliminar ordenada y lógicamente la data de las tablas del esquema bank
+
+## insert-clients-test-data.sql
+Con las sentencias para poblar la data de clients según las reglas indicadas
+
+## insert-credit-orders-test-data.sql
+Con las sentencias para poblar la data de clients según las reglas indicadas
